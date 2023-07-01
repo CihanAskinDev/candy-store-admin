@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [candyList, setCandyList] = useState()
   const getAllCandy = () => {
-    fetch ('https://express-firestore-c11.web.app/candy')
+    fetch ('https://express-firestore-chn.web.app/candy')
     .then(response => response.json())
     .then(setCandyList)
     .catch(alert)
@@ -22,8 +22,8 @@ function App() {
       price: e.target.price.value,
       calories: e.target.calories.value,
     }
-    fetch ('https://express-firestore-c11.web.app/candy',{
-   methhod: "POST" ,
+    fetch ('https://express-firestore-chn.web.app/candy',{
+   method: "POST" ,
    headers: {
     "Content-type": "application/json",//required to tell the api we are sending json
    },
